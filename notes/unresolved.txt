@@ -1,0 +1,21 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+BonusPlay | quickcell.so
+BitmapText(_RADBitmap*, unsigned long, unsigned long, char*) | quickcell.so
+ScreenBoxC(unsigned long, unsigned long, unsigned long, unsigned long, unsigned char) | quickcell.so
+ArbScaleBmp(_RADBitmap*, _RADBitmap*, unsigned short, unsigned short, unsigned char) | quickcell.so
+BitmapGetPixel(_RADBitmap*, unsigned long, unsigned long) | quickcell.so
+BitmapSetPixel(_RADBitmap*, unsigned long, unsigned long, unsigned char) | quickcell.so
+ProcessRTPackets() | quickcell.so
+ScreenFadeOutClear(unsigned char) | quickcell.so
+MouseRemoveAllNoFlush() | quickcell.so
+PlayWave(char*, unsigned short, int, int, int, bool) | quickcell.so
+QueFlush(bool) | quickcell.so
+BitmapBox(_RADBitmap*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned char) | quickcell.so
+Bitmap::ConvertSmack(unsigned char) | quickcell.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | quickcell.so
+masked_blit | quickcell.so
+mouse_b | quickcell.so
+screen | quickcell.so
